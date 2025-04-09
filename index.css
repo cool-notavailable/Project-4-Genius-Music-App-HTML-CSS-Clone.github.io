@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+/* CSS RESET */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+}
+
+/* UTILITY CLASSES */
+.flex {
+  display: flex;
+}
+.container {
+  /* max-width: 1182px; */
+  max-width: 100%;
+  padding: 0px 8rem;
+  margin: 0 auto;
+}
+.headingHr {
+  align-items: center;
+}
+.headingHr::after {
+  content: "";
+
+  flex-grow: 1;
+  background-color: black;
+  height: 2px;
+}
+section {
+  margin-top: 3rem !important;
+}
+main {
+  margin-bottom: 3rem;
+}
+#date {
+  color: #9a9a9a;
+}
+h2 {
+  font-size: 1.2rem;
+  font-family: "roboto" !important;
+  font-weight: 500;
+}
+h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.newsdate {
+  font-size: x-small;
+  padding-bottom: 1rem;
+}
+.roboto {
+  font-family: "roboto", sans-serif;
+}
+
+.button {
+  justify-content: center;
+  padding-top: 1rem;
+}
+.button button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid black;
+}
+.button button:hover {
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: white;
+}
+
+/* HEADER  */
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff64;
+  padding: 0.2rem 0.7rem;
+  font-family: "poppins", sans-serif;
+}
+
+header form {
+  outline: none;
+  background-color: white;
+  padding: 1px 2px;
+}
+header input {
+  border: none;
+  outline: none;
+  width: 10rem;
+}
+header img {
+  height: 0.9rem;
+}
+.headerbutton > * {
+  margin-right: 0.5rem;
+}
+.headerbutton > a:link,
+.headerbutton > a:visited {
+  font-size: smaller;
+  color: black;
+  text-decoration: none;
+}
+.headerbutton a:hover {
+  color: #2874f0;
+}
+/* navigation bar */
+.subheader {
+  color: white;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+}
+.subheadersection > a {
+  font-family: "poppins", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 0px 1.2rem;
+  border-right: 1px solid white;
+  font-weight: 500;
+}
+.subheadersection a:hover {
+  color: #2874f0;
+}
+.subheadersection > a:last-child {
+  border-right: none;
+}
+.icon {
+  color: #ffffffec;
+  padding: 0 2rem;
+}
+nav i:hover {
+  color: #2874f0;
+}
+.fa-brands {
+  padding-right: 1.2rem;
+}
+/* section 1 */
+
+.bignews {
+  height: 14rem;
+}
+.bignewscontent {
+  width: 40%;
+  font-family: sans-serif;
+}
+
+.bignewsImage {
+  height: inherit;
+  background-image: url(new.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60%;
+}
+
+/* section 2 */
+.newscolumns {
+  justify-content: space-between;
+}
+/* .columns {
+  width: 25%;
+  border-right: 2px solid black;
+  padding: 0rem 2rem;
+}
+.columns:last-child {
+  border-right: none;
+}  */
+
+.columns {
+  position: relative;
+  width: 25%;
+  padding: 0rem 2rem;
+}
+.columns::after {
+  content: "";
+  background-color: black;
+
+  width: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.columns:first-child::after {
+  width: 3px;
+}
+.columns:last-child::after {
+  width: 0px;
+}
+.newscolumnimage img {
+  height: 8rem;
+  width: 13rem;
+
+  /* border: 2px solid red; */
+}
+
+.columns h2 {
+  padding-bottom: 5rem;
+}
+#space {
+  margin-top: 4rem;
+}
+#lessspace {
+  margin-top: 3rem;
+}
+/* section 3 */
+
+.songSectionHeading {
+  justify-content: space-between;
+
+  width: 100%;
+}
+.songSectionHeading h1 {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+  font-weight: 900;
+}
+.otherinfmo {
+  margin: 3rem 0rem;
+  padding: 0rem 1rem;
+  padding-top: 0.5rem;
+  border: 1px solid black;
+}
+.otherinfmo span {
+  padding-right: 1rem;
+}
+/* section-3 songs rows */
+.songsinformation {
+  margin-top: 1rem;
+  border-bottom: 2px solid #e9e9e9;
+}
+.songsinformation:hover {
+  cursor: pointer;
+  background-color: #d0b5b578;
+}
+
+.songsinformation {
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+
+  font-family: "poppins";
+}
+.songsinformation h3 {
+  padding-left: 1rem;
+}
+.songsinformation h4 {
+  margin-right: 5rem;
+  font-weight: 200;
+}
+.songName {
+  justify-content: space-between;
+  width: 25%;
+  margin-right: 7rem;
+}
+.songName span {
+  padding-top: 1.3rem;
+  padding-left: 0.5rem;
+  margin-right: 2rem;
+}
+.songName img {
+  padding-top: 0.5rem;
+  margin: 0 1.2rem;
+  height: 3.7rem;
+  width: 3.4rem;
+}
+
+.likes {
+  padding: 0 1rem;
+  margin-right: 2rem;
+}
+.likes img {
+  margin-top: 1.2rem;
+  height: 1.4rem;
+}
+.likes span {
+  padding-top: 1.3rem;
+  padding-left: 0.5rem;
+  color: #ff1464;
+  font-weight: 500;
+}
+.views {
+  margin-left: 1rem;
+  margin-right: 2.5rem;
+}
+.views img {
+  height: 1.4rem;
+  margin-top: 1.2rem;
+}
+.views span {
+  padding-top: 1.3rem;
+  padding-left: 0.5rem;
+
+  /* section 4 */
+}
+.videosSectionContainer {
+  color: white;
+  background-color: #121212;
+  height: 40rem;
+}
+.videoHeading {
+  flex-direction: column;
+  align-items: center;
+}
+.videoHeading h1 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+}
+.videoHeading p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffff64;
+}
+.videosSection {
+  justify-content: space-between;
+  height: 20rem;
+}
+.video img {
+  height: 25rem;
+  width: 40rem;
+}
+.videoinformation {
+  margin: 0 2rem;
+  border-top: 1px solid white;
+  padding-top: 1.4rem;
+  padding-right: 1rem;
+}
+.videoinformation img {
+  border: 2.3px solid white;
+  background-color: white;
+  height: 70px;
+  width: 290px;
+}
+.videoinformation h2 {
+  width: 12rem;
+  font-size: 1.3rem;
+}
+.videoinformation p {
+  font-size: 0.6rem;
+  width: 10rem;
+}
+.videoinformation span {
+  font-size: 0.7rem;
+}
+.morevideos {
+  justify-content: center;
+}
+.morevideos button {
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 6.5rem;
+}
+.morevideos button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+/* section 5 */
+#pink {
+  color: #ff1464;
+  font-weight: 700;
+}
+.videosColumns {
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.othersongs {
+  width: 20%;
+}
+#newsbar {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+#songDetails {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.artist {
+  font-size: 0.6rem;
+}
+/* section 6 */
+
+#joinbutton {
+  margin-right: 2.5rem;
+}
+/* footer */
+.footerinformation {
+  background-color: #121212;
+  color: white;
+  height: 20rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #9a9a9a;
+}
+.footerinformation span:hover {
+  color: #2874f0;
+  cursor: pointer;
+}
+.columnone {
+  width: 47%;
+}
+.columnone h1 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding-left: 1.8rem;
+}
+
+.columntwo,
+.columnthree {
+  padding-left: 0.9rem;
+  padding-top: 1rem;
+  flex-direction: column;
+
+  width: 25%;
+}
+.stockholder {
+  margin-top: 4rem;
+}
+.columntwo span,
+.columnthree span {
+  font-size: 0.8rem;
+  padding-bottom: 0.9rem;
+}
+.stock {
+  margin-top: 2.3rem;
+}
+/* section 2  */
+.moreinformation {
+  padding-top: 2rem;
+  background-color: #121212;
+  color: whitesmoke;
+  height: 8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.moreinformation span:hover {
+  color: #2874f0;
+  cursor: pointer;
+}
+
+.additioninformation span {
+  padding-right: 1rem;
+}
+.songInformation {
+  padding-top: 2rem;
+}
+.songInformation span {
+  padding-right: 1rem;
+}
